@@ -20,7 +20,7 @@ def main():
                 batch_size=batch_size,
                 shuffle=True,
                 num_workers=0,
-                pin_memory=True, drop_last=False,
+                pin_memory=True, drop_last=True,
                 collate_fn=TextDatasetObj.collate_fn)
 
     TextDatasetObjval = TextDatasetval(num_examples = NUM_EXAMPLES)
@@ -29,7 +29,7 @@ def main():
                 batch_size=batch_size,
                 shuffle=False,
                 num_workers=0,
-                pin_memory=True, drop_last=False,
+                pin_memory=True, drop_last=True,
                 collate_fn=TextDatasetObjval.collate_fn)
 
     model = WriteViT().to(DEVICE)
