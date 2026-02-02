@@ -1,7 +1,7 @@
  # WriteViT: Handwritten Text Generation with Vision Transformer
 
 <p align="center">
-  <img src="./Figures/Architecture.png" alt="Model Architecture" width="800"/>
+  <img src="./Figures/architecture.png" alt="Model Architecture" width="800"/>
 </p>
 
 <p align="center">
